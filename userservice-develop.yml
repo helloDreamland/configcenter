@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.59.129:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: false
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+spring:
+  application:
+    name: userservice
+  #连接数据库
+  datasource:
+    url: jdbc:mysql://localhost/mysql
+    username: root
+    password: ps123456
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8883
